@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="Calculator.css" media="screen"></link>
+
+		<script src = "jquery-3.3.1.min.js"></script>
+
+
+		<audio id="helloAudio">
+  			<source src="Hello.wav" type="audio/wav">
+		</audio>
+
+		<audio id="beepAudio">
+			<source src="Beep.wav" type="audio/wav">
+		</audio>
+
+		<title>Golem Text Converter</title>
+
+	</head>
+
+	<body>
+
+	<!-- All the elements on the page excluding the robot -->
+	<div id = "mainContent">
+		<div id="header">
+			CALCULATOR
+		</div>
+
+		<div id="userInstruction">
+			Type your expression here.
+		</div>
+
+		<!-- This is where the user enters their input -->
+		<div id = "textbox">
+			<form>
+				<div>
+				INPUT<br><br>  
+					<input type="text" id="userInput" onKeydown = "javascript: if (event.keyCode==13) handleKeyPress(event);"><br><br>
+				</div>
+			</form>
+		</div>
+
+
+		OUTPUT<br><br>
+
+		<!-- Output displayed here -->
+		<div id="userOutput"></div>
+
+		<br>
+
+		<!-- Button for user to get last input -->
+		<div id="lastCall" onclick = "initiatePrev()">
+			REPLAY PREVIOUS INPUT
+		</div>
+
+	</div>
+
+
+	</body>
+
+</html>
