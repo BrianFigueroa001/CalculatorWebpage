@@ -3,8 +3,6 @@ class Calculator
 	//Evaluate an expression that's in postfix notation.
 	evaluate(postExpr)
 	{
-		//2 2 +
-		alert("Now in method evaluate. PostExpr: " + postExpr);
 		//The expression
 		let exprArr = postExpr.split(" ");
 		//Used to enforce order of operations
@@ -52,11 +50,9 @@ class Calculator
 					}
 					else // '/'
 					{
-						alert('wot');
 						result = x / y;
 					}		
-					alert(substring);		
-					alert(result);
+
 					//Convert the result into a string to push into the stack.
 					let stringResult = result.toString();
 					stack.push(stringResult);
