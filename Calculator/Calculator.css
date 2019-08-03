@@ -68,20 +68,6 @@ input[type=textDisplay]
 
 }
 
-
-#N21 
-{
-	visibility: visible;
-	position: absolute;
-	left: -20%;
-	top: 20%;
-
-	color: #168798;
-	font-family: "Lucida Console";
-	font-weight: normal;
-	font-size: 20;
-}
-
 #lastCall 
 {
 	margin: auto;
